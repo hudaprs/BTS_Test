@@ -1,0 +1,296 @@
+{
+	"info": {
+		"_postman_id": "0d97a5d2-16b1-461c-9b93-83306e840d3e",
+		"name": "Test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User",
+			"item": [
+				{
+					"name": "Sign up",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "aplication/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\": \"New User Again\",\r\n    \"email\": \"user@gmail.com\",\r\n    \"password\": \"123123\",\r\n    \"phone\": \"08989898\",\r\n    \"address\": \"Bandung\",\r\n    \"city\": \"Bandung\",\r\n    \"country\": \"Indonesia\",\r\n    \"name\": \"Huda Prasetyo\",\r\n    \"postcode\": \"40123\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/users/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Sign In",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"admin@gmail.com\",\r\n    \"password\": \"123123\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/users/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWVmNTY2MDI5Y2U3NjMxZjAwZDczODE3IiwiZW1haWwiOiJyZWFsLmh1ZGFwcmFzZXR5b0BnbWFpbC5jb20iLCJ1c2VybmFtZSI6Im5ld1VzZXIifSwiaWF0IjoxNTkzMTQxMDY5LCJleHAiOjE1OTMxNDQ2Njl9.N8Iaug_0Rt-OGz7X6Q0rYXtl7Ff21N8v5SjDV5d_2Og",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/users",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"users"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "Shopping",
+			"item": [
+				{
+					"name": "Get All Shopping",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWVmNTY2MDI5Y2U3NjMxZjAwZDczODE3IiwiZW1haWwiOiJyZWFsLmh1ZGFwcmFzZXR5b0BnbWFpbC5jb20iLCJ1c2VybmFtZSI6Im5ld1VzZXIifSwiaWF0IjoxNTkzMTQxMDY5LCJleHAiOjE1OTMxNDQ2Njl9.N8Iaug_0Rt-OGz7X6Q0rYXtl7Ff21N8v5SjDV5d_2Og",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/shopping",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"shopping"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create shopping",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Buying car 3\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/shopping",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"shopping"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get shopping by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWVmNTY2MDI5Y2U3NjMxZjAwZDczODE3IiwiZW1haWwiOiJyZWFsLmh1ZGFwcmFzZXR5b0BnbWFpbC5jb20iLCJ1c2VybmFtZSI6Im5ld1VzZXIifSwiaWF0IjoxNTkzMTQxMDY5LCJleHAiOjE1OTMxNDQ2Njl9.N8Iaug_0Rt-OGz7X6Q0rYXtl7Ff21N8v5SjDV5d_2Og",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/shopping/5ef573b968a16433e0368bba",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"shopping",
+								"5ef573b968a16433e0368bba"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update shopping",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Last \"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/shopping/5ef56e827ba10307b0db9f46",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"shopping",
+								"5ef56e827ba10307b0db9f46"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete shopping",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "x-auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNWVmNTY2MDI5Y2U3NjMxZjAwZDczODE3IiwiZW1haWwiOiJyZWFsLmh1ZGFwcmFzZXR5b0BnbWFpbC5jb20iLCJ1c2VybmFtZSI6Im5ld1VzZXIifSwiaWF0IjoxNTkzMTQxMDY5LCJleHAiOjE1OTMxNDQ2Njl9.N8Iaug_0Rt-OGz7X6Q0rYXtl7Ff21N8v5SjDV5d_2Og",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "http://localhost:5000/api/shopping/5ef56a16aafb051c6046df12",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"shopping",
+								"5ef56a16aafb051c6046df12"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
